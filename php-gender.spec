@@ -4,13 +4,12 @@
 
 Summary:	Gender Extension
 Name:		php-%{modname}
-Version:	0.6.1
-Release:	%mkrel 4
+Version:	0.7.0
+Release:	%mkrel 1
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/gender/
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
-Patch0:		gender-0.6.1-typo_fix.diff
 Requires:	php-bz2
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
@@ -27,8 +26,6 @@ actual database contains >40000 first names from 54 countries.
 
 %setup -q -n %{modname}-%{version}
 [ "../package*.xml" != "/" ] && mv ../package*.xml .
-
-%patch0 -p0
 
 bunzip2 data/nam_dict.txt.bz2
 
@@ -87,7 +84,7 @@ rm -rf %{buildroot}
 
 %files 
 %defattr(-,root,root)
-%doc package*.xml CREDITS LICENSE README tests
+%doc package*.xml CREDITS LICENSE README
 %attr(0644,root,root) %config(noreplace) %{_sysconfdir}/php.d/%{inifile}
 %attr(0755,root,root) %{_libdir}/php/extensions/%{soname}
 %dir %{_datadir}/%{name}
