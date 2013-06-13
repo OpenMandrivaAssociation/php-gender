@@ -4,12 +4,12 @@
 
 Summary:	Gender Extension
 Name:		php-%{modname}
-Version:	0.7.0
-Release:	%mkrel 15
+Version:	0.8.0
+Release:	1
 Group:		Development/PHP
 License:	PHP License
 URL:		http://pecl.php.net/package/gender/
-Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
+Source0:	http://pecl.php.net/get/gender-%{version}.tgz
 Requires:	php-bz2
 Requires(pre): rpm-helper
 Requires(postun): rpm-helper
@@ -172,3 +172,4 @@ rm -rf %{buildroot}
 
 * Sun Jan 04 2009 Oden Eriksson <oden.eriksson@envitory.se> 0.6.1-1mdv2009.1
 - initial Mandriva package
+
