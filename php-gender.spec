@@ -4,7 +4,7 @@
 
 Summary:	Gender Extension
 Name:		php-%{modname}
-Version:	0.8.0
+Version:	1.0.0
 Release:	1
 Group:		Development/PHP
 License:	PHP License
@@ -172,4 +172,5 @@ rm -rf %{buildroot}
 
 * Sun Jan 04 2009 Oden Eriksson <oden.eriksson@envitory.se> 0.6.1-1mdv2009.1
 - initial Mandriva package
+
 
