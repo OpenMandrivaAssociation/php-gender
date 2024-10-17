@@ -8,7 +8,7 @@ Version:	1.0.0
 Release:	2
 Group:		Development/PHP
 License:	PHP License
-URL:		http://pecl.php.net/package/gender/
+URL:		https://pecl.php.net/package/gender/
 Source0:	http://pecl.php.net/get/gender-%{version}.tgz
 Requires:	php-bz2
 Requires(pre): rpm-helper
